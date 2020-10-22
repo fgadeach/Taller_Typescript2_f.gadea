@@ -11,35 +11,14 @@
             <div class="row">
                 <div class="col align-top">
                     <h2>Federico Gadea</h2>
-                    <img src="./pp.jpg" alt="Avatar"class="img-fluid max-width: 100% height: auto">
+                    <img src="./pp.jpg" alt="Avatar"class="img-fluid max-width: 60% height: auto">
                     <h4 class="my-4">Datos Personales</h4>
-                    <table class="table p-5">
-                        <thead>
-                            <tr>
-                                <th></th>
-                            </tr>
+                    <table class="table">
+                        <thead class="thead-dark">
+                           <tr></tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Código</td>
-                                <td>10234320</td>
-                            </tr>
-                            <tr>
-                                <td>Cédula</td>
-                                <td>12221122</td>
-                            </tr>
-                            <tr>
-                                <td>Edad</td>
-                                <td>25 Años</td>
-                            </tr>
-                            <tr>
-                                <td>Dirección</td>
-                                <td>Calle falsa 123</td>
-                            </tr>
-                            <tr>
-                                <td>Teléfono</td>
-                                <td>018002500</td>
-                            </tr>
+                        <tbody id="students">
+
                         </tbody>
                     </table>
                 </div>
@@ -56,6 +35,24 @@
                           </div>
                         </div>
                     </form>
+                    
+                    <form style="margin:10px;">
+                        <div class="form-row">
+                          <div class="col">
+                              <input type="text" class="form-control" id="search-box1" placeholder="credito minimo">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control" id="search-box2" placeholder="credito maximo">
+                        </div>
+                          <div class="col">
+                              <button type="button" id="button-filterByRange" class="btn btn-success">Aplicar</button>
+                          </div>
+                        </div>
+                    </form>
+
+
+
+
                     <table class="table">
                         <thead class="thead-dark">
                            <tr>
@@ -67,11 +64,14 @@
                         <tbody id="courses">
                             
                         </tbody>
+                        </table>
                 </div>
             </div>
         </div>
         <script type="module" src="./scripts/course.js" ></script>
         <script type="module" src="./scripts/dataCourses.js" ></script>
+        <script type="module" src="./scripts/student.js" ></script>
+        <script type="module" src="./scripts/studentDetail.js" ></script>
         <script type="module" src="./scripts/main.js"></script>
     </body>
 </html>
